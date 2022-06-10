@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* se utiliza para crear variables con valores repetitivos en el sitio web*/
+:root{
+--primary-color:rgb(247, 142, 4);
+--second-color:rgb(0, 0, 0);
+    
+}
+
+.fila{
+    display: flex;
+    width: 1200px;
+    /*ancho*/
+    height: 900px;
+    margin: 25px auto;
+    border: 2px solid var(--primary-color);
+
+}
+
+.fila .contBotones{
+    width: 50%;
+    background-color:var(--primary-color);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contBotones h2 {
+    color: var(--second-color);
+    font-size: 40px;
+    margin-bottom: 30px;
+
+}
+
+.contBotones button{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: var(--second-color);
+    border: 3px solid #ffffff;
+    font-size: 24px;
+    margin: 15px;
+}
+
+.fila .contFigura{
+    width: 50%;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+.contFigura h2 {
+    color: rgb(26, 26, 151);
+    font-size: 40px;
+}
+
+.contFigura #figura{
+    width: 180px;
+    height: 180px;
+    background-color: #1a1a97;
+    margin: 50px auto;
+    transition: 2s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    /*
+    rotate es igual a rotar la figura
+    traslate es mover en eje x y y
+    scale es para aumentar o disminuir el tamaño de la figura
+    skew = distorcionar
+    */
+}
+
+#figura.rombo{
+    transform: rotate(-585deg);
+}
+
+#figura.rectanguloH{
+    width: 360px;
+    height: 180px;
+}
+
+#figura.rectanguloV{
+    width: 180px;
+    height: 360px;
+}
+
+#figura.izquierda{
+    transform: translateX(-1000px);
+
+}
+#figura.derecha{
+    transform: translateX(1000px);   
+}
+
+#figura.arriba{
+    transform: translateY(-100px)
+}
+
+#figura.abajo{
+    transform: translateY(100px)
+}
+
+#figura.abajo{
+    transform: translateY(100px)
+}
+
+#figura.diagonal{
+    transform: translate(100px, 100px)
+}
+
+#figura.triangulo {
+   
+    border-left: 100px solid #ffffff;
+    border-top: 200px solid #1a1a97 ;
+    border-right: 100px solid #ffffff;
+    transform: rotate(-180deg);
+}
+
+#figura.trianguloe {
+    width: 0;
+     height: 0;
+     border-right: 100px solid transparent;
+     border-top: 100px solid transparent;
+     border-left: 100px solid #ffffff;
+     border-bottom: 100px solid #ffffff;
+     transform: rotate(-180deg);
+}
+
+#figura.paralelo {
+    width: 200px; 
+    height: 150px; s
+    background:  #1a1a97;
+    transform: skew(20deg);
+}
+
+#figura.huevo {
+    width: 126px;
+    height: 180px;
+    background-color:	#ffd562;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+#figura.imagen {
+    width: 280px;
+    height: 280px;
+    background: url(../IMG/peter.gif);
+}
+
+#figura.pacman {
+        width:0;
+        height:0;
+        border-right: 100px solid #ffffff;
+        border-top: 100px solid #FFFF00;
+        border-left: 100px solid #FFFF00;
+        border-bottom: 100px solid #FFFF00;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+   }
+
+#figura.semi {
+    width: 200px; 
+    height: 100px; 
+    background: rgb(26, 26, 151);
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
+}
